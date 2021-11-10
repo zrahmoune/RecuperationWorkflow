@@ -19,14 +19,14 @@ class ARecuperer implements EtatLivraison
      * Marquer A récupérer
      */
     public function ARecuperer(){
-        throw new \Exception("On ne peut pas aller vers l'état 'ARecuperer' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer Annulé par vendeur
      */
     public function AnnuleeParVendeur(){
-        throw new \Exception("On ne peut pas aller vers l'état 'AnnuleeParVendeur' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
@@ -40,56 +40,56 @@ class ARecuperer implements EtatLivraison
      * Marquer Annulée par Client
      */    
     public function AnnuleeParClient(){
-        throw new \Exception("On ne peut pas aller vers l'état 'AnnuleeParClient' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer Annulée par Client par Téléphone
      */    
     public function AnnuleeParClientParTelephone(){
-        throw new \Exception("On ne peut pas aller vers l'état 'AnnuleeParClientParTelephone' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer Reportée
      */    
     public function Reportee(){
-        throw new \Exception("On ne peut pas aller vers l'état 'Reportée' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
  
     /**
      * Marquer NoShow
      */
     public function NoShow(){
-        throw new \Exception("On ne peut pas aller vers l'état 'NoShow' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer RDVClientNowShow
      */    
     public function RDVClientNoShow(){
-        throw new \Exception("On ne peut pas aller vers l'état 'RDVClientNoShow' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer Récupéré
      */    
     public function Recuperee(){
-        throw new \Exception("On ne peut pas aller vers l'état 'Recuperee' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer LivreurVersHubRetour
      */
     public function LivreurVersHubRetour(){
-        throw new \Exception("On ne peut pas aller vers l'état 'LivreurVersHubRetour' depuis l'état 'Pinding'.");
+        throw new \Exception('Transition invalide');
     }
 
     /**
      * Marquer HubRetour
      */
     public function HubRetour(){
-        throw new \Exception("On ne peut pas aller vers l'état 'HubRetour' depuis l'état 'ARecuperer'.");
+        throw new \Exception('Transition invalide');
     }
 
     public function __toString(){

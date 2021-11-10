@@ -86,7 +86,8 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,7,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "LivreurVersClient" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'LivreurVersClient'", $ex->getMessage());
+
         }    
     }
 
@@ -99,7 +100,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,14,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "AnnuleeParClient" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'AnnuleeParClient'", $ex->getMessage());
         }    
     }
 
@@ -112,7 +113,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,23,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "AnnuleeParClientParTelephone" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'AnnuleeParClientParTelephone'", $ex->getMessage());
         }    
     }
 
@@ -125,7 +126,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,21,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "Reportee" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'Reportee'", $ex->getMessage());
         }    
     }
 
@@ -138,7 +139,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,13,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "NoShow" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'NoShow'", $ex->getMessage());
         }    
     }
 
@@ -151,7 +152,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,22,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "RDVClientNoShow" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'RDVClientNoShow'", $ex->getMessage());
         }    
     }
 
@@ -164,7 +165,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,28,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "Recuperee" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'Recuperee'", $ex->getMessage());
         }    
     }
     
@@ -177,7 +178,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,16,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "LivreurVersHubRetour" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'LivreurVersHubRetour'", $ex->getMessage());
         }    
     }
 
@@ -190,7 +191,7 @@ class RendingTest extends TestCase
             $this->controller->testRecuperationTransitions(1,3,1,17,'n','n');
             $this->fail("Pas d'exception");
         } catch (Exception $ex) {
-            $this->assertEquals('On ne peut pas aller vers l\état "HubRetour" depuis l\état "Pinding".', $ex->getMessage());
+            $this->assertEquals("Transition invalide : 'Pending' Vers : 'HubRetour'", $ex->getMessage());
         }    
     }
 

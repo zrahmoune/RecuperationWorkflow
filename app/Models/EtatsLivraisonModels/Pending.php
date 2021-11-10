@@ -7,6 +7,9 @@ use App\Models\EtatsLivraisonModels\ARecuperer;
 use App\Models\EtatsLivraisonModels\AnnuleeParVendeur;
 use App\Models\Livraison;
 
+/**
+ * Tester les méthode de la classe Pending
+ */
 class Pending implements EtatLivraison 
 {
     protected Livraison $livraison;

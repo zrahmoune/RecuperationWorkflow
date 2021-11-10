@@ -65,4 +65,8 @@ class LivraisonController extends Controller
             }        
         } 
     }
+
+    public function getRecuperation(){
+        return $this->recuperation;
+    }
 }
