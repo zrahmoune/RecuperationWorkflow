@@ -25,10 +25,7 @@ class LivraisonController extends Controller
                 'message' => $ex->getMessage()
             ]);           
         }
-        return response()->json([
-            'valide' => true,
-            'message' => $this->recuperation->getEtatLivraisonActuel()->__toString()
-        ]);                
+        return response()->json(true);                
     }
 
     /**
